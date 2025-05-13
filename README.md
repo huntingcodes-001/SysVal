@@ -65,34 +65,22 @@ Monitor real-time system metrics and GPU telemetry.
 
 📂 Directory Structure
 
-├── app.py               # Flask web app
-├── telemetry.py         # System telemetry collection
+* app.py         # Flask web app
+* telemetry.py       # System telemetry collection
+* gpu_metrics.cpp    # C++ utility to query GPU stats
+* src/
+    * main.rs      # Rust app entry
+    * logger.rs    # Rust logging system
+    * gpu_metrics.rs # Rust GPU telemetry fetcher
+* static/
+    * css/
+    * js/
+* templates/
+    * dashboard.html   # Web UI
+* run.sh         # Master execution script
+* requirements.txt
+* README.md
 
-├── gpu_metrics.cpp      # C++ utility to query GPU stats
-
-├── src/
-
-│   ├── main.rs          # Rust app entry
-
-│   ├── logger.rs        # Rust logging system
-
-│   └── gpu_metrics.rs   # Rust GPU telemetry fetcher
-
-├── static/
-
-│   ├── css/
-
-│   └── js/
-
-├── templates/
-
-│   └── dashboard.html   # Web UI
-
-├── run.sh               # Master execution script
-
-├── requirements.txt
-
-└── README.md
 
 
 📌 Usage
