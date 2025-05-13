@@ -1,0 +1,6 @@
+Flask==3.0.2
+requests==2.31.0
+psutil==5.9.8
+pandas==2.2.2
+plotly==5.21.0
+subprocess-run==0.0.4

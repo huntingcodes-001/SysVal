@@ -1,0 +1,3 @@
+gpu_stress_duration: 60  # seconds
+stress_tool: "stress-ng"
+telemetry_log: "logs/telemetry.log"

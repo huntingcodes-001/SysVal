@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ValiTrack Pro - Dashboard</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <h1>Validation Telemetry Logs</h1>
+    <div id="logs">
+        {% for line in logs %}
+            <p>{{ line }}</p>
+        {% endfor %}
+    </div>
+    <script src="/static/js/main.js"></script>
+</body>
+</html>
