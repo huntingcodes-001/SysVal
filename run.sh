@@ -14,3 +14,6 @@ echo "[+] Running Rust Logger..."
 
 echo "[+] Starting Flask Dashboard..."
 python3 app.py
+
+echo "[INFO] Starting Stress Test & Telemetry" >> logs/telemetry.log
+python3 telemetry.py

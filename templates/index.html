@@ -1,16 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>ValiTrack Pro - Dashboard</title>
+    <meta charset="UTF-8">
+    <title>GPU Stress & Telemetry Dashboard</title>
     <link rel="stylesheet" href="/static/css/style.css">
 </head>
 <body>
-    <h1>Validation Telemetry Logs</h1>
-    <div id="logs">
-        {% for line in logs %}
-            <p>{{ line }}</p>
-        {% endfor %}
+    <h1>GPU Stress & Performance Telemetry</h1>
+
+    <div class="container">
+        <button onclick="startStressTest()">Start Stress Test</button>
+
+        <h2>Live Logs:</h2>
+        <div class="log-box" id="logData"></div>
     </div>
+
+    <div id="toast" class="toast"></div>
+
     <script src="/static/js/main.js"></script>
 </body>
 </html>
