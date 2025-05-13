@@ -66,7 +66,6 @@ Monitor real-time system metrics and GPU telemetry.
 📂 Directory Structure
 
 ├── app.py               # Flask web app
-
 ├── telemetry.py         # System telemetry collection
 
 ├── gpu_metrics.cpp      # C++ utility to query GPU stats
