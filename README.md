@@ -52,3 +52,69 @@ chmod +x run.sh
 
 # Run the full suite
 ./run.sh
+
+```
+
+📊 Web Dashboard
+Once launched:
+
+Access the Flask Dashboard at http://localhost:5000
+
+Monitor real-time system metrics and GPU telemetry.
+
+
+📂 Directory Structure
+
+├── app.py               # Flask web app
+├── telemetry.py         # System telemetry collection
+├── gpu_metrics.cpp      # C++ utility to query GPU stats
+├── src/
+│   ├── main.rs          # Rust app entry
+│   ├── logger.rs        # Rust logging system
+│   └── gpu_metrics.rs   # Rust GPU telemetry fetcher
+├── static/
+│   ├── css/
+│   └── js/
+├── templates/
+│   └── dashboard.html   # Web UI
+├── run.sh               # Master execution script
+├── requirements.txt
+└── README.md
+
+
+📌 Usage
+# Run standalone Rust logger
+cargo run --release
+
+# Run GPU metrics logger
+cargo run --bin metrics
+
+# Start web dashboard only
+python3 app.py
+
+
+
+🤝 Contributing
+Contributions are welcome!
+If you'd like to enhance features, improve UI/UX, or optimize system telemetry — feel free to fork the repo and submit a PR.
+
+📝 To contribute:
+🍴 Fork the repository
+
+🌱 Create a new branch (git checkout -b feature/your-feature)
+
+📝 Make your changes
+
+📤 Commit changes (git commit -m 'Add your message')
+
+📬 Push to the branch (git push origin feature/your-feature)
+
+🔍 Open a Pull Request
+
+
+
+📄 License
+MIT License © 2025 Amir Zakaria
+
+
+
